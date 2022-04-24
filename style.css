@@ -1,0 +1,97 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+	--size: 6px;
+}
+
+body {
+	background-color: #576574;
+	color: #00d2d3;
+	font-family: "Inconsolata", monospace;
+}
+
+#box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 20px;
+}
+
+#gaming {
+	width: 800px;
+	height: 600px;
+	background-color: black;
+	opacity: 65%;
+	border-radius: 2%;
+	margin-top: 30px;
+	position: relative;
+	cursor: url(http://www.rw-designer.com/cursor-extern.php?id=96741), auto;
+}
+
+#option {
+	background-color: white;
+	color: black;
+	padding: 5px;
+	width: 800px;
+}
+
+#options {
+	text-align: center;
+	font-size: 18px;
+}
+
+#start {
+	width: 150px;
+	font-size: 20px;
+	display: block;
+	margin: auto;
+}
+
+#btn {
+	margin-top: 5px;
+}
+
+#logo {
+	text-align: center;
+	font-size: 30px;
+	user-select: none;
+	color: white;
+	background: repeating-linear-gradient(
+		-45deg,
+		red 0%,
+		yellow 7.14%,
+		green 14.28%,
+		rgb(0, 255, 255) 21.4%,
+		cyan 28.56%,
+		blue 35.7%,
+		magenta 42.84%,
+		red 50%
+	);
+
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	background-clip: text;
+	animation: slide 30s linear infinite forwards;
+}
+@keyframes slide {
+	0% {
+		background-position-x: 0%;
+	}
+	100% {
+		background-position-x: 600vw;
+	}
+}
+
+.target {
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	background-color: #ee5253;
+	width: var(--size);
+	height: var(--size);
+	border-radius: 50%;
+}
